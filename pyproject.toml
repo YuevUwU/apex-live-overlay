@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "apex-team-overlay"
+version = "0.1.0"
+description = ""
+authors = ["YuevUwU <96368079+YuevUwU@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asyncio = "^3.4.3"
+websockets = "^12.0"
+protobuf = "~3.20"
+flask = "^3.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.2"
+black = "^24.4.2"
+flake8 = "^7.0.0"
+pycodestyle = "^2.11.1"
+flake8-bugbear = "^24.4.26"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
