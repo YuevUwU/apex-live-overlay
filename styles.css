@@ -15,7 +15,7 @@ body {
   height: 0.2em;
   color: white;
   padding: 0.7em;
-  margin-left: 2%;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +36,10 @@ body {
 }
 
 .rank {
-  margin-left: -2%; /* Adjust as needed */
+  display: inline-block;
+  width: 30px;
+  text-align: end;
+  margin-left: -6px;
 }
 
 .line {
@@ -45,7 +48,7 @@ body {
   background-color: red;
   opacity: 0.8;
   position: absolute;
-  left: 15%; /* Adjust as needed */
+  left: 70px; /* Adjust as needed */
 }
 
 .team-name {
@@ -53,5 +56,5 @@ body {
 }
 
 .score {
-  margin-right: 1em; /* Adjust as needed */
+  margin-right: 0.2em; /* Adjust as needed */
 }
