@@ -18,5 +18,5 @@ custom_team_name = {
     17: "HRX",
     18: "AES",
     19: "MLQ",
-    20: 20
+    20: "20"
 }

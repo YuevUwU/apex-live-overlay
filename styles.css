@@ -1,0 +1,57 @@
+body {
+  background-color: #00ff00;
+}
+
+.teko-semibold {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.live-overlay {
+  font-size: xx-large;
+  width: 8em;
+  height: 0.2em;
+  color: white;
+  padding: 0.7em;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.live-overlay:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  inset: 0;
+  background-color: black;
+  transform: skew(15deg);
+  -webkit-filter: drop-shadow(0px 2px 2px #f00);
+  filter: drop-shadow(-10px 5px 0px #f00);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#f00')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#f00')";
+}
+
+.rank {
+  margin-left: -2%; /* Adjust as needed */
+}
+
+.line {
+  height: 80%;
+  width: 0.3rem;
+  background-color: red;
+  opacity: 0.8;
+  position: absolute;
+  left: 15%; /* Adjust as needed */
+}
+
+.team-name {
+  /* Additional styling as needed */
+}
+
+.score {
+  margin-right: 1em; /* Adjust as needed */
+}
