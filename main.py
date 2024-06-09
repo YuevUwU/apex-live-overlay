@@ -12,7 +12,7 @@ WEBSOCKET_PORT = 7777
 with open('templates/index.html', 'r') as f:
     html_template = f.read()
 
-def generate_html(rank="", team_name="", score=""):
+def generate_html(rank="#0", team_name="", score="0"):
     return html_template.replace("{{ rank }}", rank) \
                         .replace("{{ team_name }}", team_name) \
                         .replace("{{ score }}", score)
@@ -32,7 +32,7 @@ async def update_team_name(websocket):
 
         target_player: Player = incoming.target
         team_id: int = target_player.teamId
-        team_name = str(custom_team_name.get(team_id, "Unknown"))
+        team_name = str(custom_team_name.get(team_id, f"Team {team_id}"))
 
         await modify_html(team_name)
         print(f"Observer switched to Team {team_id}: {team_name}")
