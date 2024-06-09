@@ -1,0 +1,22 @@
+custom_team_name = {
+    1: "YsJ",
+    2: "JIA",
+    3: "FDZ",
+    4: "SSE",
+    5: "RIG",
+    6: "BZLG",
+    7: "RTL",
+    8: "CPY",
+    9: "APR",
+    10: "NMGG",
+    11: "KHW",
+    12: "PYG",
+    13: "VL",
+    14: "jl_27_09",
+    15: "IRM",
+    16: "Usuck",
+    17: "HRX",
+    18: "AES",
+    19: "MLQ",
+    20: 20
+}
