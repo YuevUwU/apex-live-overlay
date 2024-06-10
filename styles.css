@@ -57,13 +57,9 @@ body {
   background-color: red;
   opacity: 0.8;
   position: absolute;
-  left: 70px; /* Adjust as needed */
-}
-
-.team-name {
-  /* Additional styling as needed */
+  left: 70px;
 }
 
 .score {
-  margin-right: 0.5em; /* Adjust as needed */
+  margin-right: 0.5em;
 }
