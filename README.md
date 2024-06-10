@@ -28,10 +28,6 @@ You don't need to re-run `protoc`.
 6. Switch to the "Network" tab. You may need to access it by clicking the `>>` button.
 7. Check "Disable Cache".
 
-> "Disable Cache" can avoid refresh delay (~3-20s).  
-> Users also need to install the font to the system to avoid font switching flashing.  
-> (Need to consider) Maybe it can be solved by periodically adding junk comments to index.html.  
-
 ## OBS Setup
 
 1. Keep your browser window open and not minimized.
@@ -46,4 +42,21 @@ You don't need to re-run `protoc`.
 10. Done!
 
 ## ScreenShot
-![screenshot]()
+
+
+## Thanks
+This project was written with the help of Microsoft Copilot and GPT-4o! And...
+THANKS to Tekos font, I think it's a good fit.
+THANKS to apexliveapi.com for providing the documentation.
+THANKS to StackOverflow users for different idea.
+
+## Difficulty
+
+### About I chose File I/O
+I have tried to use Flask and/or raw javascript, but they didn't return anything to html.
+As a last resort, I can only implement it with File I/O, so the project is not support Browser Source :persevere:
+
+### Why I hope users install font to local
+"Disable Cache" can avoid refresh delay (~3-20s) during idling.  
+Local font can avoid font switching flashes.  
+Maybe it can be solved by periodically adding junk comments to index.html :thinking:  
