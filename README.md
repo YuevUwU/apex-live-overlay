@@ -1,16 +1,16 @@
 # Apex Live Overlay
 
-## Setup
-
-Please follow the instructions at <https://apexliveapi.com/docs/quickstart/python/>.
-You don't need to re-run `protoc`.
-
 ## Status
 - [x] Live-update (test by `emulate.py` for short term and `emulate-once.py` for long term)
 - [ ] Test in Apex Legend (I need my friend to test it b/c I run Apex with Steam error on my PC)
 - [ ] Show rank and score from DGS API
 - [ ] Calculate rank and score (Unknown Implementability)
 - [ ] Improve project structure
+
+## Setup
+
+1. Please follow the instructions at <https://apexliveapi.com/docs/quickstart/python/>.  You don't need to re-run `protoc`.  
+2. Modify `team_data` to what you want to display.  
 
 ## Run
 
@@ -60,3 +60,6 @@ As a last resort, I can only implement it with File I/O, so the project is not s
 "Disable Cache" can avoid refresh delay (~3-20s) during idling.  
 Local font can avoid font switching flashes.  
 Maybe it can be solved by periodically adding junk comments to index.html :thinking:  
+
+### Why I use PY file to save team name data instead of JSON
+~~Just want to use int as key~~
