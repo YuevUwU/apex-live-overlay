@@ -1,3 +1,4 @@
+# pylint: disable=C0114,C0115,C0116
 import asyncio
 import random
 import time
@@ -5,7 +6,7 @@ import time
 import websockets
 
 from data import WEAPONS
-from events_pb2 import *
+from events_pb2 import PlayerKilled
 from intermediary_message_builder import random_player, timestamp
 from pack import pack
 
@@ -20,7 +21,7 @@ async def send_message():
         event.attacker.CopyFrom(random_player())
         event.victim.CopyFrom(random_player())
         event.awardedTo.CopyFrom(random_player())
-        weapon = random.choice(WEAPONS)
+        event.weapon = random.choice(WEAPONS)
 
         message = pack(event)
 

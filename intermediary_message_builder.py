@@ -1,3 +1,4 @@
+# pylint: disable=C0114,C0115,C0116
 """
 Generate intermediary message such as Player.
 WARNING: Developer haven't played Apex Legend.
@@ -10,7 +11,7 @@ import time
 
 import names
 
-from data import CHARACTERS, PLATFORMS, WEAPONS
+from data import CHARACTERS, PLATFORMS
 from events_pb2 import Player, Vector3
 
 
@@ -35,7 +36,7 @@ def random_player():
         teamName="".join([random.choice(string.ascii_uppercase) for _ in range(3)]),
         squadIndex=random.randint(1, 3),
         character=random.choice(CHARACTERS),
-        skin="skin",  # TODO
+        skin="Original",  # TODO
     )
 
 
