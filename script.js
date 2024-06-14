@@ -1,5 +1,3 @@
-console.log("Hello World");
-
 const WEBSOCKET_URL = "ws://localhost:4567/";
 let websocket;
 
@@ -10,9 +8,10 @@ function connect() {
     console.log("Connected to WebSocket server");
   };
 
-  websocket.onmessage = ({ team_name }) => {
+  websocket.onmessage = ({ data }) => {
+    console.debug(data)
     const team_name_element = document.querySelector(".team-name");
-    team_name_element.innerText = team_name;
+    team_name_element.innerText = data;
   };
 
   websocket.onclose = () => {
