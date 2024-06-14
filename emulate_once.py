@@ -1,10 +1,9 @@
+# pylint: disable=C0114,C0115,C0116
 import asyncio
-import random
-import time
 
 import websockets
 
-from events_pb2 import *
+from events_pb2 import ObserverSwitched
 from intermediary_message_builder import random_player, timestamp
 from pack import pack
 
@@ -27,9 +26,7 @@ async def send_message():
         print("Message sent")
 
 
-
 try:
     asyncio.run(send_message())
 except ConnectionRefusedError:
     print("Connect call failed")
-time.sleep(random.randint(200, 3000) / 1000)
