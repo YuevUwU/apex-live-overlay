@@ -1,13 +1,12 @@
 [tool.poetry]
 name = "apex-live-overlay"
-version = "0.1.0"
+version = "0.2.0-dev1"
 description = ""
 authors = ["YuevUwU <96368079+YuevUwU@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-asyncio = "^3.4.3"
 websockets = "^12.0"
 protobuf = "3.20.3"
 names = "^0.3.0"
