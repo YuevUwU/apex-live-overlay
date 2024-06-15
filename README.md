@@ -46,9 +46,27 @@ The tutorial is modified by <https://apexliveapi.com/docs/quickstart/python/>
 
 1. Add a Browser Source
 2. Make sure "Local Files" is checked
-3. [Browse] and Open `index.html` in this project. (not `templates/index.html`)
+3. [Browse] and Open `index.html` in this project.
 4. Press [OK]
-5. Done!
+5. (Optional) If you want to show only team, you can paste this code in [Your Browser Source] > Custom CSS
+```css
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+.line, .rank, .score {display: none}
+.team-name {width: 100%; text-align: center; margin-right: 0.9em}
+.live-overlay-shadow {top: 3px; left: 5px}
+.live-overlay {
+  width: 5em;
+  clip-path: polygon(
+    0.4287187078898em 1.6em,
+    0em 0.5em,
+    0.3em 0em,
+    5.1em 0em,
+    5.5555em 1.1em,
+    5.2em 1.6em
+  )
+}
+```
+(Replace `.live-overlay-shadow {...}` with `.live-overlay-shadow {display: none}` if you don't want to see the red shadow.)
 
 ## Special Thanks
 
